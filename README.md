@@ -17,9 +17,9 @@ Mục tiêu chính là phân tích các chỉ số **Accuracy**, **Loss** và **
 
 ## 📂 Cấu trúc Repository
 
-* `Food_Classification.ipynb`:
+* `foodsClassification.ipynb`:
     * Notebook huấn luyện và đánh giá trên tập dữ liệu món ăn (21 classes).
-* `Landmark_Classification.ipynb`:
+* `placesClassification.ipynb`:
     * Notebook huấn luyện và đánh giá trên tập dữ liệu địa danh (26 classes).
 
 ## 🧠 Các mô hình được thử nghiệm (Models)
