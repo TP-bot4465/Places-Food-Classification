@@ -5,7 +5,7 @@
 [![Keras](https://img.shields.io/badge/Keras-API-red)](https://keras.io/)
 [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
 
-## 📖 Giới thiệu (Overview)
+##  Giới thiệu (Overview)
 
 Repository này chứa source code thực nghiệm nhằm đánh giá và so sánh hiệu năng của các kiến trúc **Deep Learning** (Transfer Learning) trên bài toán **Image Classification** với bối cảnh đặc trưng tại Việt Nam.
 
@@ -15,24 +15,24 @@ Dự án thực hiện Train và Evaluate trên 2 bộ dữ liệu (Datasets) ri
 
 Mục tiêu chính là phân tích các chỉ số **Accuracy**, **Loss** và **F1-Score** để tìm ra mô hình tối ưu nhất.
 
-## 📂 Cấu trúc Repository
+##  Cấu trúc Repository
 
 * `foodsClassification.ipynb`:
     * Notebook huấn luyện và đánh giá trên tập dữ liệu món ăn (21 classes).
 * `placesClassification.ipynb`:
     * Notebook huấn luyện và đánh giá trên tập dữ liệu địa danh (26 classes).
 
-## 🧠 Các mô hình được thử nghiệm (Models)
+##  Các mô hình được thử nghiệm (Models)
 
 Dự án sử dụng kỹ thuật **Transfer Learning** với bộ trọng số `imagenet` trên 5 kiến trúc mạng nơ-ron tiên tiến:
 
 1.  **InceptionV3**
 2.  **Xception**
-3.  **MobileNetV2** (Tối ưu cho thiết bị di động/Edge devices)
-4.  **ResNet152V2** (Kiến trúc rất sâu với Residual connections)
-5.  **InceptionResNetV2** (Kết hợp Inception module và Residual connections)
+3.  **MobileNetV2** 
+4.  **ResNet152V2**
+5.  **InceptionResNetV2** 
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * **Language:** Python
 * **Deep Learning Framework:** TensorFlow, Keras
@@ -40,7 +40,7 @@ Dự án sử dụng kỹ thuật **Transfer Learning** với bộ trọng số 
 * **Visualization:** Matplotlib
 * **Metrics:** Scikit-learn (F1 Score, Confusion Matrix)
 
-## 📊 Phương pháp thực hiện (Methodology)
+##  Phương pháp thực hiện (Methodology)
 
 Quy trình thực nghiệm (Pipeline) được áp dụng thống nhất cho cả 2 bài toán:
 
@@ -64,9 +64,3 @@ Quy trình thực nghiệm (Pipeline) được áp dụng thống nhất cho c�
 * Đánh giá mô hình dựa trên các chỉ số: **Training/Validation Accuracy** và **Loss**.
 * Tính toán **Weighted F1-Score** cho từng class.
 * Trực quan hóa kết quả bằng **Confusion Matrix** để phân tích các trường hợp nhận diện sai (misclassification).
-
-## 🚀 Hướng dẫn cài đặt & Sử dụng (How to Run)
-
-### 1. Cài đặt thư viện (Prerequisites)
-```bash
-pip install tensorflow pandas numpy matplotlib scikit-learn opencv-python
